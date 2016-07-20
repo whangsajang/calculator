@@ -1,0 +1,83 @@
+body {
+    background: url('images/back3.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.calcbutt{
+    cursor: pointer;
+    display: inline-block;
+    font-size: 40px;
+    background-color: grey;
+    height: 50px;
+    -moz-border-radius:75px;
+    -webkit-border-radius: 75px;
+    width: 50px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 10px;
+    position: relative;
+    border: 2px solid black;
+    box-shadow: 3px 5px 5px #291F1D;
+    left: 10px;
+}
+.topb {
+    background-color: #33FF00;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border: 2px solid #009900;
+    padding: 20px 60px;
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    box-shadow: 3px 5px 5px #291F1D;
+
+}
+.top {
+    background-color: black;
+    width: 325px;
+    height: 125px;
+
+}
+.display {
+    position: relative;
+    background-color: darkseagreen;
+    width: 280px;
+    height: 80px;
+    left: 22px;
+    top: 25px;
+    font-size: 300%;
+    border-radius: 10px;
+}
+
+.operators{
+    background-color: orange;
+}
+.equal {
+    background-color: red;
+}
+
+.wrapper {
+    background-color: lightslategray;
+    width: 325px;
+    position: fixed;
+    top: 15%;
+    left: 36%;
+    border: 4px solid dimgray;
+
+
+}
+
+.calcbutt:hover {
+    background-color: blue;
+}
+.topb:hover{
+    background-color: purple;
+}
+.calcbutt:active {
+    background-color:darkred;
+}
+.topb:active {
+    background-color:rebeccapurple;
+}
