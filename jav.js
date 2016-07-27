@@ -14,11 +14,11 @@ $(document).ready(function(){
     })
 
 })
-
+/**************** Display Function ****************/
 function displayText(numb){
     $('.display').html(numb);
 }
-
+/**************Function to determine what value was clicked ***************/
 function buttonClicked(val){
     switch(val){
         case "+":
@@ -45,7 +45,7 @@ function buttonClicked(val){
 
     }
 }
-
+/********************** Function to calculate numbers in array *************/
 function calculate(){
     switch(operator){
         case '+':
@@ -74,20 +74,21 @@ function calculate(){
     return result;
 }
 
-
+/********** Function to add all values into Array ************/
 function numberClicked(val){
     numbArray[index] += val;
-    displayText(val);
+    displayText(numbArray[index]);
 }
-
+/***************Function for Decimal Clicked *****************/
 function decimalClicked(val){
-    if(numbArray[index].indexOf('.') == -1){
-        return;
+    if(numbArray[index].indexOf('.') == 1){
+        numbArray[index] += val;
     }
-    displayText(val);
+    displayText(numbArray[index]);
 }
-
+/**************Function for operator clicked *****************/
 function operatorClicked(val){
+
     if(numbArray[0] === ""){
         return;
     }
@@ -95,17 +96,12 @@ function operatorClicked(val){
     if(numbArray[1] !== ''){
         calculate();
     }
-
-    if(operator !== ''){
-        console.log('Exists');
-        return
-    }
-    displayText(numbArray[0]);
+    displayText(val);
     index++;
     console.log(numbArray[0]);
 
 }
-
+/******************Function to Clear all variables **************/
 function allClear(){
     numbArray = ['',''];
     result = null;
@@ -114,7 +110,9 @@ function allClear(){
     displayText('');
 }
 
-
+function clear(){
+    $('.display').html('');
+}
 
 
 
