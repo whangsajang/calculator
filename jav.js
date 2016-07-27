@@ -100,9 +100,9 @@ function operatorClicked(val){
         console.log('Exists');
         return
     }
-    displayText(numbArray[0] + val);
+    displayText(numbArray[0]);
     index++;
-    console.log(numbArray[0] + val);
+    console.log(numbArray[0]);
 
 }
 

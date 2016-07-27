@@ -19,6 +19,7 @@ body {
     left: 10px;
     color: white;
     border-radius: 20%;
+    transform: scale(1.05);
 
 }
 
