@@ -81,9 +81,12 @@ function numberClicked(val){
 }
 /***************Function for Decimal Clicked *****************/
 function decimalClicked(val){
-    if(numbArray[index].indexOf('.') == 1){
-        numbArray[index] += val;
+    if(numbArray[index].indexOf('.') != '-1'){
+        return
+    }else if(numbArray[index] == ''){
+        numbArray[index] += 0;
     }
+    numbArray[index] += val;
     displayText(numbArray[index]);
 }
 /**************Function for operator clicked *****************/
